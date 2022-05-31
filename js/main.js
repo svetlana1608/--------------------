@@ -1,16 +1,19 @@
+
+
+
 const play = document.querySelector('.about__play'); // Ищет по html class "about__play"
 const video = document.querySelector('.about__video video'); // Ищет selector - about__video video
 
 /*обработчик события*/
-play.addEventListener('click', () => { // Обработчик события - делает код, который внутри при нажатии на play 
+/*play.addEventListener('click', () => { // Обработчик события - делает код, который внутри при нажатии на play 
     video.play(); // Это запускает видео
     video.setAttribute('controls', 'controls'); // Это при нажатии на плей добавляет элементы управления видео
     play.classList.add('about__play--hidden'); // Это при нажатии на плей добавляет класс хиден
-});
+});*/
 
 document.addEventListener('DOMContentLoaded', function() {
     // конечная дата, например 1 июля 2021
-    const deadline = new Date(2021, 06, 01);
+    const deadline = new Date();
     // id таймера
     let timerId = null;
     // склонение числительных
