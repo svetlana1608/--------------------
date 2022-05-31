@@ -1,0 +1,102 @@
+.first {
+	height: 100vh;
+	min-height: 600px;
+	background-image: url("../../img/first-bg.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: var(--white-color);
+}
+
+.first__container {
+	position: relative;
+	height: 100%; /*чтобы всё прижалось вниз*/
+	padding-top: 223px;
+	padding-bottom: 200px;
+}
+
+.first__link {
+	background-color: rgb(28,46,61, 0.4);
+	font-size: 11px;
+	letter-spacing: 2px;
+	color: #FFFFFF;
+	padding: 15px 30px;
+	border-radius: 100px;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-bottom: 42px;
+}
+
+.first__title {
+	font-weight: 700;
+	font-size: 80px;
+	line-height: 84px;
+	color: #FFFFFF;
+	max-width: 40%;
+	margin-bottom: 40px;
+}
+
+.first__descr {
+	font-weight: 400;
+	font-family: 'SFCompactText';
+	font-size: 14px;
+	line-height: 16px;
+	max-width: 32%;
+	margin-bottom: 58px;
+}
+	
+.first__btn {
+	font-size: 12px;
+	letter-spacing: 2.18182px;
+	color: var(--white-color);
+	background-color: var(--accent-color);
+	border-radius: 8px;
+	padding: 33px 80px;
+	text-transform: uppercase;
+	margin-bottom: 156px;
+}
+
+.first__bottom {
+	position: absolute;
+	left: 50%; /*двигаем на 50% влево*/
+	transform: translateX(-50%); /*на половину элемента двигаем обратно*/
+	bottom: 0;
+	width: calc(100% - 60px);
+	display: flex;
+	max-height: 120px;
+	min-height: 120px;
+	height: 10%;
+}
+
+.search-form {
+	flex-shrink: 0; /*чтобы элемент не сжимался*/
+	width: 68%;
+	position: relative;
+	overflow: hidden;
+	border-top-left-radius: 4px;
+}
+
+.search-form__field {
+	border: none;
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+	color: var(--dark-color);
+	padding-left: 55px;
+	padding-right: 70px;
+}
+
+.search-form__button {
+	height: 18px;
+	width: 18px;
+	background-image: url(/img/search.svg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 62px;
+}
+
