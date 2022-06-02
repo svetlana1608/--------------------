@@ -1,17 +1,5 @@
-
-
-
-const play = document.querySelector('.about__play'); // Ищет по html class "about__play"
-const video = document.querySelector('.about__video video'); // Ищет selector - about__video video
-
-/*обработчик события*/
-/*play.addEventListener('click', () => { // Обработчик события - делает код, который внутри при нажатии на play 
-    video.play(); // Это запускает видео
-    video.setAttribute('controls', 'controls'); // Это при нажатии на плей добавляет элементы управления видео
-    play.classList.add('about__play--hidden'); // Это при нажатии на плей добавляет класс хиден
-});*/
-
 document.addEventListener('DOMContentLoaded', function() {
+ 
     // конечная дата, например 1 июля 2021
     const deadline = new Date();
     // id таймера
@@ -22,10 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     // вычисляем разницу дат и устанавливаем оставшееся времени в качестве содержимого элементов
     function countdownTimer() {
-      const diff = deadline - new Date();
+      const diff = deadline - new Date(2022,4,30);
       if (diff <= 0) {
         clearInterval(timerId);
       }
+     
       const days = diff > 0 ? Math.floor(diff / 1000 / 60 / 60 / 24) : 0;
       const hours = diff > 0 ? Math.floor(diff / 1000 / 60 / 60) % 24 : 0;
       const minutes = diff > 0 ? Math.floor(diff / 1000 / 60) % 60 : 0;
