@@ -43,6 +43,28 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'BebasNeueBold';
+    src: url('../fonts/BebasNeueBold.woff2') format(woff2),
+         url('../fonts/BebasNeueBold.woff') format(woff);
+    display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTNorms-Regular';
+    src: url('../fonts/BebasNeueRegular.woff2') format(woff2),
+         url('../fonts/BebasNeueRegular.woff') format(woff);
+    display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+
+
 
 UniSansHeavyItalicCAPS
 

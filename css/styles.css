@@ -7,6 +7,6 @@
 
 /*components imports*/
 
-@import "./components/_header.css";
-@import "./components/_first.css";
+@import "../components/_header.css";
+@import "../components/_first.css";
 
